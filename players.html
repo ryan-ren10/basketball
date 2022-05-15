@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="basketball.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+
+    <body class="background2">
+        <div class="header">
+            <img src=logo.png class="logo">
+        </div>
+
+        <div>
+            <ul class="topnav">
+                <li class="navButton"><a href="home.html">Home</a></li>
+                <li class="navButton"><a href="players.html">Player Finder</a></li> 
+            </ul>
+        </div>
+
+        <div class="filter">
+            <div>
+                <input type="text" id="searchPlayer" placeholder="Search Player...">
+                <button onclick="findPlayer()"><i class="fa fa-search"></i></button>
+            </div>
+            <div>
+                <select id="age">
+                    <option value="all">Age</option>
+                    <option value="young">18-24</option>
+                    <option value="middle">25-31</option> 
+                    <option value="old">32-41</option>
+                </select>
+            </div>
+            <div>
+                <select id="position">
+                    <option value="all">Position</option>
+                    <option value="PG">PG</option>
+                    <option value="SG">SG</option> 
+                    <option value="SF">SF</option>
+                    <option value="PF">PF</option>
+                    <option value='C'>C</option>
+                </select>
+            </div>
+            <div>
+                <select id="skill">
+                    <option value="all">Skill</option>
+                    <option value="College">College</option>
+                    <option value="Pro">Pro</option>
+                    <option value="NBA">NBA</option>
+                    <option value="Other">Other</option> 
+                </select>
+            </div>
+            <div>
+                <button type="button" id="filterC" onclick="resetAll()">Reset</button>
+                <button type="button" id="filterB" onclick="filterAll()">Filter</button>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="wholeGal"> 
+                <div class="gallery">
+                    <img src="Jeremy Lin.jpg" id="JeremyLin" width="230" height="150" onclick="updateInfo('JeremyLin')"> 
+                </div>
+
+                <div class="gallery">
+                    <img src="Michael Wang.jpg" id="MichaelWang" width="230" height="150" onclick="updateInfo('MichaelWang')">
+                </div>
+
+                <div class="gallery">
+                    <img src="Yao Ming.jpg" id="YaoMing" width="230" height="150" onclick="updateInfo('YaoMing')">
+                </div>
+
+                <div class="gallery">
+                    <img src="More Free.jpg" id="MoreFree" width="230" height="150" onclick="updateInfo('MoreFree')">
+                </div>
+
+                <div class="gallery">
+                    <img src="Fanbo Zeng.jpg" id="FanboZeng" width="230" height="150" onclick="updateInfo('FanboZeng')">
+                </div>
+
+                <div class="gallery">
+                    <img src="Kevin Zhang.jpg" id="KevinZhang" width="230" height="150" onclick="updateInfo('KevinZhang')">
+                </div>
+
+                <div class="gallery">
+                    <img src="Yi Jianlian.jpg" id="YiJianlian" width="230" height="150" onclick="updateInfo('YiJianlian')">
+                </div>
+
+                <div class="gallery">
+                    <img src="Guo Ailun.jpg" id="GuoAilun" width="230" height="150" onclick="updateInfo('GuoAilun')">
+                </div>
+
+                <div class="gallery">
+                    <img src="Jinqiu Hu.jpg" id="JinqiuHu" width="230" height="150" onclick="updateInfo('JinqiuHu')">
+                </div>
+            </div>
+
+            <div class="vl"></div>
+
+            <div class="info">
+                <h1 id="playerHeader">Jeremy Lin</h1>
+                <img id="playerImage" src="Jeremy Lin.jpg" width="230" height="150"> 
+                <iframe width="320" height="150" id="vid" src="https://www.youtube.com/embed/m3A6wJBZ7hE" frameborder="0"allowfullscreen></iframe>
+                <table class="table">
+                    <tr>
+                        <th colspan=2>Career Stats</th>
+                    </tr>
+
+                    <tr class="ageRow"> 
+                        <td>Age</td>
+                        <td id="ageVal">33</td>
+                    </tr>
+
+                    <tr class="posRow">
+                        <td>Position</td>
+                        <td id="posVal">PG</td> 
+                    </tr>
+
+                    <tr class="lgRow">
+                        <td>League</td>
+                        <td id="lgVal">NBA</td> 
+                    </tr>
+
+                    <tr class="teamRow">
+                        <td>Team</td>
+                        <td id="teamVal">Raptors</td> 
+                    </tr>
+                </table>
+
+                <div class="statRow">
+                    <div class="column">
+                        <h2>Points</h2>
+                        <span id="ptDot">11.6</span>
+                    </div>
+
+                    <div class="column">
+                        <h2>Rebounds</h2>
+                        <span id="rebDot">2.8</span>
+                    </div>
+
+                    <div class="column">
+                        <h2>Assists</h2>
+                        <span id="astDot">4.3</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+    </body>
+
+    <script src="script1.js"></script>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="basketball.css">
+    </head>
+
+
+    <body class="background">
+        <div class="header">
+            <img src=logo.png class="logo">
+        </div>
+
+        <div>
+            <ul class="topnav">
+                <li class="navButton"><a href="home.html">Home</a></li>
+                <li class="navButton"><a href="players.html">Player Finder</a></li> 
+            </ul>
+        </div>
+
+        <div>
+            <h1 id="message"><span id="typeWrite"></span></h1>
+        </div>
+
+        
+    </body>
+
+    <script>
+        var i = 0;
+        var txt = 'Our goal: To INSPIRE and EMPOWER Chinese Youths.';
+        var speed = 80;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("typeWrite").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter();
+    </script>
+</html>

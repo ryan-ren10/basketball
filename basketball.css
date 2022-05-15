@@ -1,0 +1,220 @@
+.topnav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.background {
+    background-image: url(jlin.jpg);
+    background-size: 100%;
+    margin: 0px; 
+}
+
+.background2 {
+    background-color: yellow;
+    margin: 0px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.navButton {
+    float: left;
+}
+
+.navButton a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header {
+    background-color: black;
+    padding:10px;
+    margin: 0;
+}
+
+#message {
+    margin: 80px;
+    font-size: 90px;
+    color: orange;
+}
+#typeWrite {
+    background-color: white;
+    line-height: 2;  
+}
+
+.filter {
+    background-color: orange;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    padding: 10px;
+}
+
+#searchPlayer {
+    float: left;
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.filter button {
+    padding: 7px;
+    border: none;
+    background: #ddd;
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background-color: #ccc;
+}
+
+#age {
+    margin-top: 9px;
+    padding:8px;
+    font-size:14px;
+}
+
+#position {
+    margin-top: 9px;
+    padding:8px;
+    font-size:14px;
+}
+
+#skill {
+    margin-top: 9px;
+    padding:8px;
+    font-size:14px; 
+}
+
+#filterB {
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer; 
+}
+
+.wrapper {
+    overflow: hidden;
+    z-index:-3;
+}
+.wholeGal {
+    float: left;
+    width: 57%;
+    height: auto;
+}
+.gallery {
+    float: left;
+    padding: 10px;
+    width: 230px;
+}
+.gallery img {
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+.vl {
+    border-left: 4px solid grey;
+    position: absolute;
+    height: 625px;
+    left: 57%;
+    top: 230px; 
+}
+.info {
+    z-index:-2;
+    position: relative;
+    left: 20px;
+    padding: 10px;
+}
+
+.table {
+    margin-top: 5;
+    width:42%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    border: 1px solid orange;
+    padding: 8px;
+
+}
+
+td {
+    border: 1px solid orange;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color:orange;
+  }
+
+.statRow {
+    display: flex;
+}
+
+.column {
+    flex: 33.3%;
+    padding: 5px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+#ptDot {
+    height: 70px;
+    width: 80px;
+    background-color: orangered;
+    border-radius: 50%;
+    font-size: 45px;
+    text-align: center;
+    padding:10px;
+    padding-top:20px;
+    display: inline-block;
+}
+#rebDot {
+    height: 70px;
+    width: 80px;
+    background-color: orangered;
+    border-radius: 50%;
+    font-size: 45px;
+    text-align: center;
+    padding:10px;
+    padding-top:20px;
+    display: inline-block;
+}
+#astDot {
+    height: 70px;
+    width: 80px;
+    background-color: orangered;
+    border-radius: 50%;
+    font-size: 45px;
+    text-align: center;
+    padding:10px;
+    padding-top:20px;
+    display: inline-block;
+}
+
+
+#vid{
+    z-index:-1;
+}
